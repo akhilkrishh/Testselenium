@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="1" ignored="0" total="5" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="19621" started-at="2020-03-16T16:41:22 IST" finished-at="2020-03-16T16:41:42 IST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="19378" started-at="2020-03-16T16:41:22 IST" finished-at="2020-03-16T16:41:42 IST">
+      <class name="com.test.via.TestClass">
+        <test-method status="PASS" signature="dummyfunction3(java.lang.String)[pri:0, instance:com.test.via.TestClass@2b552920]" name="dummyfunction3" duration-ms="3" started-at="2020-03-16T16:41:42 IST" finished-at="2020-03-16T16:41:42 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[google.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dummyfunction3 -->
+      </class> <!-- com.test.via.TestClass -->
+      <class name="com.test.via.TestBookFlights">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.test.via.TestBookFlights@627551fb]" name="beforeTest" is-config="true" duration-ms="4433" started-at="2020-03-16T16:41:22 IST" finished-at="2020-03-16T16:41:27 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="FAIL" signature="dummyfunction1(java.lang.String, java.lang.String)[pri:0, instance:com.test.via.TestBookFlights@627551fb]" name="dummyfunction1" duration-ms="0" started-at="2020-03-16T16:41:27 IST" finished-at="2020-03-16T16:41:27 IST">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Cannot inject @Test annotated Method [dummyfunction1] with [class java.lang.String, class java.lang.String].
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Cannot inject @Test annotated Method [dummyfunction1] with [class java.lang.String, class java.lang.String].
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
+at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:441)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+at org.testng.internal.Parameters.createParameters(Parameters.java:712)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:879)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:744)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:783)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dummyfunction1 -->
+        <test-method status="PASS" signature="testfunction()[pri:0, instance:com.test.via.TestBookFlights@627551fb]" name="testfunction" duration-ms="14895" started-at="2020-03-16T16:41:27 IST" finished-at="2020-03-16T16:41:42 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testfunction -->
+        <test-method status="SKIP" signature="dummyfunction2()[pri:0, instance:com.test.via.TestBookFlights@627551fb]" name="dummyfunction2" duration-ms="0" started-at="2020-03-16T16:41:42 IST" depends-on-methods="com.test.via.TestBookFlights.testfunction, com.test.via.TestBookFlights.dummyfunction1" finished-at="2020-03-16T16:41:42 IST">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TestBookFlights.dummyfunction2()[pri:0, instance:com.test.via.TestBookFlights@627551fb] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TestBookFlights.dummyfunction2()[pri:0, instance:com.test.via.TestBookFlights@627551fb] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:101)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dummyfunction2 -->
+      </class> <!-- com.test.via.TestBookFlights -->
+    </test> <!-- Test -->
+    <test name="Test2" duration-ms="7" started-at="2020-03-16T16:41:42 IST" finished-at="2020-03-16T16:41:42 IST">
+      <class name="com.test.via.TestClass">
+        <test-method status="PASS" signature="dummyfunction3(java.lang.String)[pri:0, instance:com.test.via.TestClass@694e1548]" name="dummyfunction3" duration-ms="3" started-at="2020-03-16T16:41:42 IST" finished-at="2020-03-16T16:41:42 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[google.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dummyfunction3 -->
+      </class> <!-- com.test.via.TestClass -->
+    </test> <!-- Test2 -->
+  </suite> <!-- Suite -->
+</testng-results>
